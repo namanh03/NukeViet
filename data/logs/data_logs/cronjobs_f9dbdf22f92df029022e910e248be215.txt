@@ -1,0 +1,15 @@
+array (
+  'id' => 2,
+  'start_time' => 1759061204,
+  'inter_val' => 1440,
+  'inter_val_type' => 0,
+  'run_file' => 'dump_autobackup.php',
+  'run_func' => 'cron_dump_autobackup',
+  'params' => '',
+  'del' => 0,
+  'is_sys' => 1,
+  'act' => 1,
+  'last_time' => 1759231670,
+  'last_result' => 1,
+  'vi_cron_name' => 'Tự động lưu CSDL',
+)

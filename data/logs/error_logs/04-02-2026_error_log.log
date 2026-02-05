@@ -1,0 +1,152 @@
+[Wed, 04 Feb 2026 17:02:39 +0700] [localhost] [::1] [User Notice(1024): PDOException Object
+(
+    [message:protected] => SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'reject_reason'
+    [string:Exception:private] => 
+    [code:protected] => 42S21
+    [file:protected] => C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php
+    [line:protected] => 544
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php
+                    [line] => 544
+                    [function] => query
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => ALTER TABLE nv4_vi_news_detail ADD reject_reason text NULL DEFAULT NULL COMMENT 'Nguyên nhân từ chối' AFTER files;
+                            [1] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\xampp\htdocs\nukeviet\install\update_data.php
+                    [line] => 864
+                    [function] => query
+                    [class] => NukeViet\Core\Database
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => ALTER TABLE nv4_vi_news_detail ADD reject_reason text NULL DEFAULT NULL COMMENT 'Nguyên nhân từ chối' AFTER files;
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\xampp\htdocs\nukeviet\install\update.php
+                    [line] => 1363
+                    [function] => nv_up_modnews4507
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S21
+            [1] => 1060
+            [2] => Duplicate column name 'reject_reason'
+        )
+
+)
+] [FILE: /install/update_data.php] [LINE: 866] [TRACE:]
+#1  LINE: 1363  FILE: /install/update.php
+#2  LINE: 866   FILE: /install/update_data.php
+
+[Wed, 04 Feb 2026 17:02:40 +0700] [localhost] [::1] [User Notice(1024): PDOException Object
+(
+    [message:protected] => SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'nv4_vi_modblocks' already exists
+    [string:Exception:private] => 
+    [code:protected] => 42S01
+    [file:protected] => C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php
+    [line:protected] => 544
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php
+                    [line] => 544
+                    [function] => query
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => CREATE TABLE nv4_vi_modblocks (
+                module_name varchar(50) NOT NULL COMMENT 'Tên module',
+                tag varchar(100) NOT NULL COMMENT 'Tag của khối block',
+                ini_tag varchar(160) NOT NULL COMMENT 'Tag tương đương trong config ini',
+                title varchar(250) NOT NULL DEFAULT '' COMMENT 'Tên gọi nếu có',
+                UNIQUE KEY modblock (module_name, tag),
+                KEY module_name (module_name),
+                KEY tag (tag)
+            ) ENGINE=MyISAM COMMENT 'Vị trí block tùy chỉnh theo từng module';
+                            [1] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\xampp\htdocs\nukeviet\install\update_data.php
+                    [line] => 894
+                    [function] => query
+                    [class] => NukeViet\Core\Database
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => CREATE TABLE nv4_vi_modblocks (
+                module_name varchar(50) NOT NULL COMMENT 'Tên module',
+                tag varchar(100) NOT NULL COMMENT 'Tag của khối block',
+                ini_tag varchar(160) NOT NULL COMMENT 'Tag tương đương trong config ini',
+                title varchar(250) NOT NULL DEFAULT '' COMMENT 'Tên gọi nếu có',
+                UNIQUE KEY modblock (module_name, tag),
+                KEY module_name (module_name),
+                KEY tag (tag)
+            ) ENGINE=MyISAM COMMENT 'Vị trí block tùy chỉnh theo từng module';
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\xampp\htdocs\nukeviet\install\update.php
+                    [line] => 1363
+                    [function] => nv_up_sys4507
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S01
+            [1] => 1050
+            [2] => Table 'nv4_vi_modblocks' already exists
+        )
+
+)
+] [FILE: /install/update_data.php] [LINE: 904] [TRACE:]
+#1  LINE: 1363  FILE: /install/update.php
+#2  LINE: 904   FILE: /install/update_data.php
+
+[Wed, 04 Feb 2026 17:02:40 +0700] [localhost] [::1] [Run-time notices(8192): preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated] [FILE: /install/update_data.php] [LINE: 969] [TRACE:]
+#1  LINE: 1363  FILE: /install/update.php
+#2  LINE: 969   FILE: /install/update_data.php
+
+[Wed, 04 Feb 2026 17:03:31 +0700] [localhost] [::1] [Warning(2): rename(C:/xampp/htdocs/nukeviet/install/update/install/update.php,C:/xampp/htdocs/nukeviet/install/update.php): Access is denied (code: 5)] [FILE: /install/update.php] [LINE: 321] [TRACE:]
+#1  LINE: 1623  FILE: /install/update.php
+#2  LINE: 321   FILE: /install/update.php
+
