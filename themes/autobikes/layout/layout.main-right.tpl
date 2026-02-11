@@ -17,7 +17,6 @@
 <div class="row">
 	<div class="col-sm-16 col-md-18">
 		[TOP]
-		[BOTTOM]
 	</div>
 	<div class="col-sm-8 col-md-6">
 		[RIGHT]
@@ -25,6 +24,16 @@
 </div>
 <div class="row">
 		[FOOTER]
+</div>
+
+<div class="row footer-bottom-block">
+    <div class="col-sm-16 col-md-18">
+        [trai]
+    </div>
+
+    <div class="col-sm-8 col-md-6">
+        [phai]
+    </div>
 </div>
 
 {FILE "footer_extended.tpl"}
