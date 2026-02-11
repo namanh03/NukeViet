@@ -1,0 +1,19 @@
+[Tue, 10 Feb 2026 15:40:49 +0700] [localhost] [::1] [Warning(2): simplexml_load_file(): C:/xampp/htdocs/nukeviet/themes/autobikes/blocks/global.oto_xemay.ini:1: parser error : Start tag expected, '&lt;' not found] [FILE: /admin/themes/block_config.php] [LINE: 68] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 68    FILE: /admin/themes/block_config.php
+
+[Tue, 10 Feb 2026 15:40:53 +0700] [localhost] [::1] [Warning(2): simplexml_load_file(): C:/xampp/htdocs/nukeviet/themes/autobikes/blocks/global.oto_xemay.ini:1: parser error : Start tag expected, '&lt;' not found] [FILE: /admin/themes/block_content.php] [LINE: 167] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 167   FILE: /admin/themes/block_content.php
+
+[Tue, 10 Feb 2026 15:47:04 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nukeviet4.nv4_news_rows' doesn't exist in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT id, titl...', NULL)
+#1 C:\xampp\htdocs\nukeviet\themes\autobikes\blocks\global.video_home.php(15): NukeViet\Core\Database->query('SELECT id, titl...')
+#2 C:\xampp\htdocs\nukeviet\themes\autobikes\blocks\global.video_home.php(53): nv_block_video_home()
+#3 C:\xampp\htdocs\nukeviet\includes\core\user_functions.php(178): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\nukeviet\themes\autobikes\theme.php(378): nv_blocks_content('<!DOCTYPE html>...')
+#5 C:\xampp\htdocs\nukeviet\modules\news\funcs\main.php(362): nv_site_theme('<div class="new...')
+#6 C:\xampp\htdocs\nukeviet\index.php(345): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]

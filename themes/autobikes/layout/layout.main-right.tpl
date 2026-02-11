@@ -17,7 +17,6 @@
 <div class="row">
 	<div class="col-sm-16 col-md-18">
 		[TOP]
-		{MODULE_CONTENT}
 		[BOTTOM]
 	</div>
 	<div class="col-sm-8 col-md-6">
@@ -27,6 +26,7 @@
 <div class="row">
 		[FOOTER]
 </div>
+
 {FILE "footer_extended.tpl"}
 {FILE "footer_only.tpl"}
 <!-- END: main -->
