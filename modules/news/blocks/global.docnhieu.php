@@ -35,16 +35,16 @@ $content .= '
 .docnhieu-title{
     color:red;
     font-weight:bold;
-    font-size:22px;
+    font-size:20px;
     margin:0 0 10px 0;
     padding:0;
-    border:none; /* bỏ gạch đỏ */
+    border:none; 
 }
 
 .docnhieu-item{
     margin:0 0 12px 0;
     padding:0;
-    border:none; /* bỏ gạch ngang dưới */
+    border:none;
 }
 
 .docnhieu-item a{
